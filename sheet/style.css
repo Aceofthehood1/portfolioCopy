@@ -1,0 +1,281 @@
+body{
+  font-family: 'Noto Sans', sans-serif;
+  font-size:1.5em;
+  margin:0px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+header{
+background:rgb(0, 0, 0);
+padding-top:20px;
+min-height: 40px;
+border-bottom: red 3px solid;
+}
+
+header a{
+  color:#ffffff;
+  text-decoration:none;
+  text-transform:uppercase;
+}
+
+footer{
+  background: rgb(0, 0, 0);
+  border-top: red 3px solid;/*A background for the footer and and a red line border above and beside it */
+  min-height: 20px;
+  position: sticky;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+.main-footer{
+  margin-top: 1350px;
+}
+
+footer a{
+  text-decoration:none;
+  /*This removes the lines seperating each of the social media icons*/
+}
+
+header ul{
+  margin:0;
+  padding:0;
+}
+
+header li{
+  float: left;
+  padding:0 20px 0 20px;
+  display:inline;
+}
+
+header nav{
+  float:right;
+}
+
+.fab{
+  color:white;
+  margin: 10px;
+  transition:all .5s ease-in-out;
+}
+
+.fa-solid{
+  color:white;
+  margin: 10px;
+  transition:all .5s ease-in-out;
+}
+
+.fab:hover , .fa-solid:hover{
+  transform: scale(1.2);
+}
+
+.text-container{
+  width: 260px;
+          height: 130px;
+          border-right: 1px solid #403F44;
+          float: left;
+          text-transform: uppercase;
+          font-size: 16px;
+          margin: 43px 0 0;
+}
+
+@media(max-width:600px)
+{
+  body{
+      max-width: 100%;
+  border-radius:5px;
+  grid-column: 1;
+  }
+}
+
+:root{
+  font-size:75.5%;
+  font-family:"Raleway",sans-serif;
+}
+
+/*Editing the header by size color and thickness and also font family*/
+h1{
+  font-size: 3.5rem;
+  font-weight:400;
+  text-align:center;
+  font-family:"Oswald",sans-serif;
+  color: #3974b79d
+}
+
+hr{
+  /*This allows the images to be seperated by margins without any borders on the side*/
+  margin: 1rem, 0, 1rem, 0;
+  border:0;
+  border-top: 1px solid rgba(0,0,0,1);
+}
+
+.home-gallery{
+  display:grid;
+  grid-template-columns: 550px 550px;
+  grid-template-rows: 500px 500px 500px;
+  grid-gap:7.5rem;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.home-gallery-item{
+  width: 600px;
+  height: 480px;
+  border-radius:5px;
+  margin: 20px 0 10px 40px;
+  position: relative;
+  box-shadow: 0.5px, 20px, rgba(0,0,0,0.5);
+  transition:all .5s ease-in-out;
+  overflow:hidden; 
+  background-color: #000;
+}
+
+.home-gallery-item p {
+  color: white;
+}
+
+.home-gallery-container{
+  width: 110rem;
+  margin:2rem auto;
+}
+
+.home-gallery-item:hover{
+  box-shadow:0,10px,20px,rgba(0,0,0,0);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.gallery-container{
+  width: 110rem;
+  margin:2rem auto;
+}
+
+/* This code makes use of a transition that takes place when the mouse pointer passes through the images*/
+.gallery-item{
+  width: 600px;
+  height: 480px;
+  border-radius:5px;
+  margin: 20px 0 10px 40px;
+  position: relative;
+  box-shadow: 0.5px, 20px, rgba(0,0,0,0.5);
+  transition:all .5s ease-in-out;
+  overflow:hidden; 
+  background-color: #000;
+}
+
+.gallery-item p {
+  color: white;
+}
+
+.gallery{
+  display:grid;
+  grid-template-columns: 550px 550px;
+  grid-template-rows: 500px 500px 500px;
+  grid-gap:6.9rem;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.gallery-item:hover{
+  box-shadow:0,10px,20px,rgba(0,0,0,0);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.gallery-item:hover .gallery-item-text{
+  height:540px;
+  width: 600px;
+  top: 0px;
+  background: #000;
+  opacity: 1;
+}
+
+.gallery-item:hover .gallery-item-description{
+  opacity: 1;
+  visibility: visible;
+}
+
+img{
+  width: 600px;
+  height: 440px;
+}
+
+.text{
+  color:#ffffff;
+  font-size:2.5em;
+  padding:16px,32px;
+  font-family:"Oswald",sans-serif;
+}
+
+.welcome-page{
+    height: 100vh;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+span{
+  color: black;
+}
+
+.gallery-page{
+  height: 100vh;
+  margin: 0;
+}
+
+.gallery-text{
+  text-align: center;
+}
+
+
+.gallery-item-text{
+  height: 30px;
+  width: 540px;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 20px;
+}
+
+.gallery-item-title{
+  width: 600px;
+  height: 30px;
+  color: #000;
+}
+
+.gallery-item-description{
+  visibility: hidden;
+  opacity: 0;
+}
+
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+#item-title{
+  color: #ffffff;
+}
+
+.overview{
+  color: #3974b79d;
+}
+
+@media (max-width:500px){
+  .gallery-item,body{
+    max-width: 30%;
+    grid-column:2;
+    font-family:"Oswald",sans-serif;
+  }
+  div.container,h1{
+    text-align:center;
+    margin-left:2em;
+  }
+  div.text{
+    font-size:2.5em;
+  }
+}
